@@ -77,4 +77,22 @@
     text-decoration: none;
     color: var(--preto);
 }
+    .container__imagem--transparente{
+  display: none;
+}
+
+.cabecalho__menu-hamburguer{
+  display: none;
+}
+
+.opcoes__botao:checked~.lista-menu{
+  display: block;
+}
+
+.opcoes__botao{
+  display: none;
+}
+.opcoes__item{
+  padding: 1mm;
+}
 }
