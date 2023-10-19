@@ -49,6 +49,9 @@
     background-clip:text;
     text-transform:uppercase;
 }
+.container__botao{
+    display: none;
+}
 
 .lista-menu__titulo, .lista-menu__item{
     padding: 1em;
@@ -59,19 +62,28 @@
     display: none;
     font-style: italic;
 }
+.opcoes{
+    display: none;
+}
 
 @media screen and (min-width: 825px){
-    .titulo__cabecalho{
+    .container__titulo, .container__titulo--negrito{
         font-size: 30px;
         font-family: var(--font-secundaria);
-        color: black;
-        display: block;
+}
+.container__titulo{
+    font-weight: 400;
+    display: none;
+}
+.container__titulo--negrito{
+    font-weight: 700;
 }
 .opcoes{
     display: flex;
 }
 .opcoes__item{
     padding: 01em;
+    list-style: none;
 }
 .opcoes__link{
     text-decoration: none;
@@ -92,7 +104,5 @@
 .opcoes__botao{
   display: none;
 }
-.opcoes__item{
-  padding: 1mm;
-}
+
 }
